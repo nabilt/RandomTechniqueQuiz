@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Practice Technique Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+      <h1 style="text-align:center;">Practice Technique Selector</h1>
+        <div id="result">
+          <p id="key"></p>	  
+          <p id="technique"></p>
+        </div>
+        <button type="button" onclick="generateTechnique()">Generate Random Technique</button>      
+        <form id="settingsForm">
+            <fieldset>
+                <legend>Select Techniques</legend>
+                <h3 class="subheading">Scales</h3>
+                <input type="checkbox" id="fourOctaveScale">
+                <label for="fourOctaveScale">Four-Octave Scale</label><br>
+                <input type="checkbox" id="thirdScale">
+                <label for="thirdScale">Separated by a 3rd</label><br>
+                <input type="checkbox" id="sixthScale">
+                <label for="sixthScale">Separated by a 6th</label><br>
+                <input type="checkbox" id="octaveStaccatoScale">
+                <label for="octaveStaccatoScale">Scale in Octaves: Blocked staccato</label><br>
+                <input type="checkbox" id="chromaticOctaves">
+                <label for="chromaticOctaves">Chromatic in Octaves: Blocked staccato</label><br>
+                <input type="checkbox" id="formulaPattern">
+                <label for="formulaPattern">Formula Pattern</label><br>
+                
+                <h3 class="subheading">Chords</h3>
+                <input type="checkbox" id="tonicFourNote">
+                <label for="tonicFourNote">Tonic Four-Note Chord</label><br>
+                <input type="checkbox" id="tonicTriad">
+                <label for="tonicTriad">Tonic Triad Chord</label><br>		
+                <input type="checkbox" id="dominantSeventh">
+                <label for="dominantSeventh">Dominant 7th Chord</label><br>
+                <input type="checkbox" id="leadingToneDimSeventh">
+                <label for="leadingToneDimSeventh">Leading-Tone Diminished 7th Chord</label><br>
+            
+                <h3 class="subheading">Arpeggios</h3>
+                <input type="checkbox" id="tonicArpeggios">
+                <label for="tonicArpeggios">Tonic Arpeggios</label><br>
+                <input type="checkbox" id="dominantSeventhArpeggio">
+                <label for="dominantSeventhArpeggio">Dominant 7th Arpeggio</label><br>
+                <input type="checkbox" id="leadingToneDimSeventhArpeggio">
+                <label for="leadingToneDimSeventhArpeggio">Leading-Tone Diminished 7th Arpeggio</label><br>
+            </fieldset>
+	    
+            <fieldset>
+                <legend>Select Keys</legend>
+                <input type="checkbox" id="C" checked>
+                <label for="C">C</label>
+                <input type="checkbox" id="CMinor" checked>
+                <label for="CMinor">Cm</label><br>
+                <input type="checkbox" id="Db" checked>
+                <label for="Db">Db</label>
+                <input type="checkbox" id="DbMinor" checked>
+                <label for="DbMinor">Dbm</label><br>
+                <input type="checkbox" id="D" checked>
+                <label for="D">D</label>
+                <input type="checkbox" id="DMinor" checked>
+                <label for="DMinor">Dm</label><br>
+                <input type="checkbox" id="Eb" checked>
+                <label for="Eb">Eb</label>
+                <input type="checkbox" id="EbMinor" checked>
+                <label for="EbMinor">Ebm</label><br>
+                <input type="checkbox" id="E" checked>
+                <label for="E">E</label>
+                <input type="checkbox" id="EMinor" checked>
+                <label for="EMinor">Em</label><br>
+                <input type="checkbox" id="F" checked>
+                <label for="F">F</label>
+                <input type="checkbox" id="FMinor" checked>
+                <label for="FMinor">Fm</label><br>
+                <input type="checkbox" id="Gb" checked>
+                <label for="Gb">Gb</label>
+                <input type="checkbox" id="GbMinor" checked>
+                <label for="GbMinor">Gbm</label><br>
+                <input type="checkbox" id="G" checked>
+                <label for="G">G</label>
+                <input type="checkbox" id="GMinor" checked>
+                <label for="GMinor">Gm</label><br>
+                <input type="checkbox" id="Ab" checked>
+                <label for="Ab">Ab</label>
+                <input type="checkbox" id="AbMinor" checked>
+                <label for="AbMinor">Abm</label><br>
+                <input type="checkbox" id="A" checked>
+                <label for="A">A</label>
+                <input type="checkbox" id="AMinor" checked>
+                <label for="AMinor">Am</label><br>
+                <input type="checkbox" id="Bb" checked>
+                <label for="Bb">Bb</label>
+                <input type="checkbox" id="BbMinor" checked>
+                <label for="BbMinor">Bbm</label><br>
+                <input type="checkbox" id="B" checked>
+                <label for="B">B</label>
+                <input type="checkbox" id="BMinor" checked>
+                <label for="BMinor">Bm</label>
+            </fieldset>
+            <fieldset>
+                <legend>Options</legend>
+                <input type="checkbox" id="solidEnabled" checked>
+                <label for="solidEnabled">Enable Solid</label><br>
+                <input type="checkbox" id="brokenEnabled" checked>
+                <label for="brokenEnabled">Enable Broken</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Scale Options</legend>
+                <input type="checkbox" id="naturalMinorEnabled" checked>
+                <label for="naturalMinorEnabled">Enable Natural Minor</label><br>
+                <input type="checkbox" id="harmonicMinorEnabled" checked>
+                <label for="harmonicMinorEnabled">Enable Harmonic Minor</label><br>
+                <input type="checkbox" id="melodicMinorEnabled" checked>
+                <label for="melodicMinorEnabled">Enable Melodic Minor</label><br>
+            </fieldset>	    
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
